@@ -1,0 +1,59 @@
+/* PokeCard */
+
+.PokeCard {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 8px;
+
+    margin: 0.25em;
+    padding: 1em;
+
+    width: 95%;
+
+    background-image: url('../img/dots.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.PokeCard img {
+    height: 100px;
+}
+
+/* Pokemon Info */
+
+.PokemonINFO {
+    width: 50%;
+}
+
+.PokemonINFO h1 {
+    font-size: 0.9em;
+
+    margin-bottom: 1em;
+}
+
+.PokemonINFO h2 {
+    margin-bottom: 0.25em;
+
+    font-variant: small-caps;
+    font-size: 1.25em;
+}
+
+.PokemonINFO span {
+    color: #fff;
+
+    padding: 0.2em 0.5em;
+
+    font-size: 0.9em;
+    font-variant: small-caps;
+
+    border-radius: 4px;
+
+    display: inline;
+
+    text-align: center;
+
+    margin-right: 0.25em;
+}
