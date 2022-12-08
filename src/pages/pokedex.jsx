@@ -25,10 +25,10 @@ export default function PokedexPAGE() {
 
   //get more pokemon
   const getMorePokemons = () => {
-    setPokemonsENDPOINTS((value) => value += 20)
-
     if(pokemonsENDPOINTS >= 151) {
       setPokemonsENDPOINTS(151)
+    } else {
+      setPokemonsENDPOINTS((value) => value += 20)
     }
   }
   
@@ -73,7 +73,9 @@ export default function PokedexPAGE() {
         ))}
       </section>
 
-      <button onClick={() => getMorePokemons()}>More</button>
+      {pokemonsENDPOINTS === 151 ? '' : (
+          <button onClick={() => getMorePokemons()}>More</button>
+        )}
 
       <footer>
         Website created by{" "}
